@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     protected string currentSceneNameString;
     
     private float playerLifepoints;
+
     void Update()
     {
         currentSceneNameString = "Current scene: "+SceneManager.GetActiveScene().name;
