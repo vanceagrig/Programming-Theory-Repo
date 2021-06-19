@@ -5,14 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManager : MonoBehaviour
 {
-
-   public void NewGameButton()
+    public string lastSceneBeforeGameOver;
+    private void Start()
     {
-        SceneManager.LoadScene(1);
+        lastSceneBeforeGameOver = SceneManager.GetActiveScene().name;
+    }
+    private void Update()
+    {
+        
+    }
+
+    public void NewGameButton()
+    {
+        SceneManager.LoadScene("FirstScene");
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void RestartLastScene()
+    {
+      
+        SceneManager.LoadScene(2);
     }
 }

@@ -107,7 +107,7 @@ public class Animals : MonoBehaviour
             {
                 directionOfCharacter = Character.transform.position - transform.position;
                 directionOfCharacter = directionOfCharacter.normalized;    // Get Direction to Move Towards
-                rb.AddForce(directionOfCharacter * jumpForce, ForceMode.Force);
+                rb.AddForce(directionOfCharacter * jumpForce, ForceMode.Impulse);
 
             }
             else
