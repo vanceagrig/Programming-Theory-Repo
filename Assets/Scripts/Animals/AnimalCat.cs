@@ -17,5 +17,5 @@ public class AnimalCat : Animals
     {
         lifePoints -= 100;
     }
-
+   
 }
